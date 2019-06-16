@@ -5,29 +5,33 @@
 项目的结构树如下：
 
 ```
-:.
-├─data
-│  ├─train
-├─log
-├─models
-└─utils
+.
+├─ cnn_claaifier.ipynb                血氧通道，使用CNN分类
+├─ ml_classfier.ipynb                 血氧通道，使用传统机器学习模型分类
+├─ data                               数据
+│  ├─ train                           数据集
+│  ├─ cnn_dataset.py                  用于CNN的dataset
+│  └─ ml_dataset.py                   用于传统机器学习模型的dataset
+├─ models                             CNN模型
+│  ├─ dense.py
+│  ├─ google_net.py
+│  ├─ nasnet.py
+│  ├─ psgnet.py
+│  ├─ resnet.py
+│  ├─ tcn.py
+│  └─ vgg16.py
+└─ utils                              工具模块
+   ├─ logger.py                       日志模块
+   └─ ml_detector.py                  异常检测
 ```
 
-### data目录
+### 如何运行
 
-data目录是存放训练数据和测试数据，数据集预处理代码的文件
+用```jupyter notebook```打开```ml_classfier, cnn_claaifier```任意一个可直接运行
 
-train存放训练数据集，目前有一份数据文件，包含血氧、脉搏和事件数据，作为测试
+#### 准备数据集
 
-### models目录
+数据集放在```data/train```下（目前有一个模拟文件），一份完整的数据（一个病人）包括```XX_脉搏.txt, XX_事件.txt 两个文件```。
 
-CNN网络模型，模型均已经改为一维卷积神经网络，部分模型是参考现有的CNN改为一维卷积，如文件名所示
 
-### utils目录
-
-异常检测，日志模块
-
-### 运行
-
-主文件夹下分为 ml_classfier, cnn_claaifier 两个ipython文件，数据集放在data/train下（目前有一个模拟文件用于测试），用jupyter notebook打开后可以直接运行
 
