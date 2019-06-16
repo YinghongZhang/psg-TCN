@@ -20,6 +20,7 @@
 │  ├─ resnet.py
 │  ├─ tcn.py
 │  └─ vgg16.py
+├─ checkpoints                        存放训练好的模型
 └─ utils                              工具模块
    ├─ logger.py                       日志模块
    └─ ml_detector.py                  异常检测
