@@ -8,6 +8,15 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+# data
+reference/
+predict/
+data/train
+data/test
+data/trimer
+data/ui_root
+data/train_yuange
+reference/
 build/
 develop-eggs/
 dist/
@@ -20,6 +29,7 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -38,6 +48,7 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+.nox/
 .coverage
 .coverage.*
 .cache
@@ -72,6 +83,10 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# IPython
+profile_default/
+ipython_config.py
+
 # pyenv
 .python-version
 
@@ -102,3 +117,20 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+.vscode/settings.json
+checkpoints/devents.txt
+checkpoints/pre.txt
+checkpoints/pulse_model/pulse_model.model
+checkpoints/cnn_models/Den_params.pkl
+checkpoints/cnn_models/Goo_params.pkl
+checkpoints/cnn_models/Googl_params.pkl
+checkpoints/cnn_models/NASNE_params.pkl
+checkpoints/cnn_models/NAS_params.pkl
+checkpoints/cnn_models/Res_params.pkl
+checkpoints/cnn_models/TCN_params.pkl
+checkpoints/cnn_models/VGG_params.pkl
